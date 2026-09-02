@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 256 256">
+  <defs>
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="2" result="off"/>
+      <feGaussianBlur in="off" stdDeviation="3" result="blur"/>
+      <feBlend in="SourceGraphic" in2="blur" mode="normal"/>
+    </filter>
+  </defs>
+
+  <!-- App icon rounded background (Connect Giant red) -->
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="#c62828" filter="url(#dropShadow)"/>
+
+  <!-- Stylized "C" in white (centered) -->
+  <text x="50%" y="56%" font-family="Helvetica, Arial, sans-serif" font-size="140" font-weight="700"
+        text-anchor="middle" fill="#ffffff" dominant-baseline="middle">C</text>
+
+  <!-- Notification badge (red circle with white ring and '1') -->
+  <g>
+    <!-- Outer circle + white ring -->
+    <circle cx="198" cy="54" r="28" fill="#ff3b30" stroke="#ffffff" stroke-width="6"/>
+    <!-- Badge number -->
+    <text x="198" y="58" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700"
+          fill="#ffffff" text-anchor="middle" dominant-baseline="middle">1</text>
+  </g>
+</svg>
